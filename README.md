@@ -195,10 +195,6 @@ The [sources page](https://postfinder.io/en/legal/) names each one.
 | Python | [`postfinder`](https://pypi.org/project/postfinder/) |
 | Go | [`postfinder-go`](https://github.com/postfinder/postfinder-go) |
 
-Looking for Australian street addresses rather than locations? That is
-[Locio](https://locio.com.au): G-NAF address autocomplete, validation and
-geocoding.
-
 ## Licence
 
 MIT.

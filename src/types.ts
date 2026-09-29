@@ -77,7 +77,7 @@ export interface NearbyPlace extends Place {
  * One row of the typeahead: a suburb or a location.
  *
  * A row of kind `address` exists in the shape but not in this API's answers:
- * G-NAF rows belong to locio.com.au and api.postfinder.io filters them out.
+ * api.postfinder.io filters street address rows out.
  */
 export interface SearchHit {
   kind: "locality" | "place" | "address";
