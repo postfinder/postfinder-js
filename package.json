@@ -1,6 +1,6 @@
 {
   "name": "@postfinder/client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find post offices, parcel lockers and post boxes near a point, and look up postcodes. Free and keyless.",
   "keywords": [
     "post office locator",

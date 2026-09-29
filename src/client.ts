@@ -15,7 +15,7 @@ import {
   type SearchHit,
 } from "./types";
 
-export const VERSION = "0.1.0";
+export const VERSION = "0.1.1";
 export const DEFAULT_BASE_URL = "https://api.postfinder.io";
 
 /** The service answers an empty list below this, so there is nothing to ask. */
