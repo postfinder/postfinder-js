@@ -1,0 +1,25 @@
+name: release
+
+on:
+  push:
+    tags: ["v*"]
+
+# Trusted publishing: npm verifies this workflow's identity, so there is no long
+# lived token in the repository to leak. It also mints the provenance attestation
+# that shows on the package page.
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          registry-url: "https://registry.npmjs.org"
+      - run: npm ci
+      - run: npm run typecheck && npm test && npm run build
+      - run: npm publish --access public --provenance
